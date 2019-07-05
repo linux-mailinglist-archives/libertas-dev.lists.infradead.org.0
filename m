@@ -2,68 +2,64 @@ Return-Path: <libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.or
 X-Original-To: lists+libertas-dev@lfdr.de
 Delivered-To: lists+libertas-dev@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id F11C1606E7
-	for <lists+libertas-dev@lfdr.de>; Fri,  5 Jul 2019 15:55:15 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 2044460A88
+	for <lists+libertas-dev@lfdr.de>; Fri,  5 Jul 2019 18:43:11 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:MIME-Version:Message-Id:Date:Subject:To
-	:From:Reply-To:Content-ID:Content-Description:Resent-Date:Resent-From:
-	Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:
-	List-Owner; bh=pcDXAXeYXhQuyJ4D5E/1UA+vfYV+zHF0xEDy6HCajw4=; b=HwiWC8I+3ux5e7
-	Y+wjdIZra2bse8E47FUfs/IQOS6SH/knh7Lu/LP/qlWiQAM5RfctK0A3vgGtbBd3AGzKcnL1NQcnH
-	rvWpKIxUOhs2r6c+rwXzod/bC6I3PXv+G5SPnc2pb6WbY1g3bWnhu2Mw3bXQACW8B1Auq1OkxY0Hl
-	2vRLjCWqV3Y7TCfpc+Ubo4UeyjwSgHXLtY0XhG69JfJ0OhIyBeoq4PljnsJyhEWs/X2z0dGCTG+s1
-	slF7Qq8/X6b52bxcXJ4f6pmxNYG8UxS7pLxY8i7MuTJu4UaRIECEm8KWlVIIt5gzCB972QZi2GzJN
-	Q1/9mLLoC4n+EWgB0Axw==;
+	List-Archive:List-Unsubscribe:List-Id:MIME-Version:References:In-Reply-To:
+	Date:To:From:Subject:Message-ID:Reply-To:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	List-Owner; bh=IF2QpfgF7poiDYfFHb5DW8uCmFuWJnIBbWMLq9Y7du4=; b=halRY7A1lbh0Hl
+	ogejs4MfMZerYlH/2iFVHq4dt3vViaxt19eVZnNNmFjKUMpG0EGDR5kmdRe25X5Y32Hb192bLI1dk
+	L8Op1ok+K1BQUo5N0PLuHZlPJ2x/LVq3Zzsj1RiCmRh7RomzdQLUARCTjxv8ANgB2+nnWGiX11Ifh
+	kY8Wa+luQCp+YODwnvwGa7anGc/sF8aL1g7xrz2N14l7mIQP5zGQ0ADD6M1Un0/SxXes1gyeHPG/y
+	R57sw7JSV+Ron1dyzGt9JyOouTKoAx+/MRIZjHlgNAp6iVvCoq61dLNE2AyuAVWZ68hpA/de7Hp4T
+	mOMmOj1vMRNkPYDYQMkQ==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92 #3 (Red Hat Linux))
-	id 1hjOgA-0005Df-Ig; Fri, 05 Jul 2019 13:55:10 +0000
-Received: from casper.infradead.org ([2001:8b0:10b:1236::1])
+	id 1hjRIZ-0003Mm-Fx; Fri, 05 Jul 2019 16:42:59 +0000
+Received: from mx1.redhat.com ([209.132.183.28])
  by bombadil.infradead.org with esmtps (Exim 4.92 #3 (Red Hat Linux))
- id 1hjJQl-0004lg-UK
- for libertas-dev@bombadil.infradead.org; Fri, 05 Jul 2019 08:18:55 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=infradead.org; s=casper.20170209; h=Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-Id:Date:Subject:Cc:To:From:Sender:Reply-To:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=e3UvMr+vKCUwa/C+ekCwkHSY6PHjTdfwI/NZqVt7swg=; b=m+JTlOUwl1h6c44JcopG0kOzYG
- Zww15EPuXBDuwhA1UrsaKqvWHjQsGaxYjmoOsUXeqLrAcF1bgykyX1eZ1CmMXGWEjcgeeeOGV1X9e
- 6qP3m58TFCKR2fYzrkAbVc8hJe5//fbYovg8OtdDJN5HGxeFquYqpEkoOEal/UXgmwmKTWpsFedrN
- rhEl6SEIY2ukdV2G4RMOF2028+qm39zsURffewLwtNOjRNpJvUePimRE91kv6byABHB0LfE8QKAXo
- YtMv/rgKBLar382+SWLm0mSVcXmnADinhyDcHR+DwzTyfmCLVuGY2S+wcEjsCJP1IACBknzOYzdhi
- ha71TNqw==;
-Received: from youngberry.canonical.com ([91.189.89.112])
- by casper.infradead.org with esmtps (Exim 4.92 #3 (Red Hat Linux))
- id 1hjJQd-0005Hy-0c
- for libertas-dev@lists.infradead.org; Fri, 05 Jul 2019 08:18:48 +0000
-Received: from 1.general.cking.uk.vpn ([10.172.193.212] helo=localhost)
- by youngberry.canonical.com with esmtpsa (TLS1.0:RSA_AES_256_CBC_SHA1:32)
- (Exim 4.76) (envelope-from <colin.king@canonical.com>)
- id 1hjJPS-0004Yw-Sd; Fri, 05 Jul 2019 08:17:34 +0000
-From: Colin King <colin.king@canonical.com>
-To: Kalle Valo <kvalo@codeaurora.org>,
- "David S . Miller" <davem@davemloft.net>, libertas-dev@lists.infradead.org,
- linux-wireless@vger.kernel.org, netdev@vger.kernel.org
-Subject: [PATCH] libertas: remove redundant assignment to variable ret
-Date: Fri,  5 Jul 2019 09:17:34 +0100
-Message-Id: <20190705081734.15292-1-colin.king@canonical.com>
-X-Mailer: git-send-email 2.20.1
+ id 1hjRIV-0003Lc-SY
+ for libertas-dev@lists.infradead.org; Fri, 05 Jul 2019 16:42:57 +0000
+Received: from smtp.corp.redhat.com (int-mx05.intmail.prod.int.phx2.redhat.com
+ [10.5.11.15])
+ (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))
+ (No client certificate requested)
+ by mx1.redhat.com (Postfix) with ESMTPS id D5AA613AAE;
+ Fri,  5 Jul 2019 16:42:54 +0000 (UTC)
+Received: from ovpn-112-42.rdu2.redhat.com (ovpn-112-42.rdu2.redhat.com
+ [10.10.112.42])
+ by smtp.corp.redhat.com (Postfix) with ESMTP id C3A5884774;
+ Fri,  5 Jul 2019 16:42:50 +0000 (UTC)
+Message-ID: <ee4472e4728becc9713962ba264742cb1f337098.camel@redhat.com>
+Subject: [PATCH v2] libertas: Fix a double free in if_spi_c2h_data()
+From: Dan Williams <dcbw@redhat.com>
+To: Kalle Valo <kvalo@codeaurora.org>
+Date: Fri, 05 Jul 2019 11:42:48 -0500
+In-Reply-To: <e679c9f99d6952f82924c71f036e4a196d0e72d4.camel@redhat.com>
+References: <20190626100926.GD3242@mwanda>
+ <be491ab35ba46111a1c90cc12b6d5ff6ea3f57e8.camel@redhat.com>
+ <20190626132340.GE28859@kadam>
+ <e679c9f99d6952f82924c71f036e4a196d0e72d4.camel@redhat.com>
+User-Agent: Evolution 3.30.5 (3.30.5-1.fc29) 
 MIME-Version: 1.0
+X-Scanned-By: MIMEDefang 2.79 on 10.5.11.15
+X-Greylist: Sender IP whitelisted, not delayed by milter-greylist-4.5.16
+ (mx1.redhat.com [10.5.110.29]); Fri, 05 Jul 2019 16:42:54 +0000 (UTC)
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20190705_091847_086760_D2E9C23A 
-X-CRM114-Status: GOOD (  12.27  )
+X-CRM114-CacheID: sfid-20190705_094255_938156_4127C785 
+X-CRM114-Status: GOOD (  13.79  )
 X-Spam-Score: -5.0 (-----)
-X-Spam-Report: SpamAssassin version 3.4.2 on casper.infradead.org summary:
- Content analysis details:   (-5.0 points, 5.0 required)
+X-Spam-Report: SpamAssassin version 3.4.2 on bombadil.infradead.org summary:
+ Content analysis details:   (-5.0 points)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
- high trust [91.189.89.112 listed in list.dnswl.org]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ high trust [209.132.183.28 listed in list.dnswl.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
 X-BeenThere: libertas-dev@lists.infradead.org
 X-Mailman-Version: 2.1.29
 Precedence: list
@@ -75,37 +71,54 @@ List-Post: <mailto:libertas-dev@lists.infradead.org>
 List-Help: <mailto:libertas-dev-request@lists.infradead.org?subject=help>
 List-Subscribe: <http://lists.infradead.org/mailman/listinfo/libertas-dev>,
  <mailto:libertas-dev-request@lists.infradead.org?subject=subscribe>
-Cc: kernel-janitors@vger.kernel.org, linux-kernel@vger.kernel.org
+Cc: Philip Rakity <prakity@yahoo.com>, libertas-dev@lists.infradead.org,
+ kernel-janitors@vger.kernel.org, linux-wireless@vger.kernel.org,
+ Lubomir Rintel <lkundrak@v3.sk>, Dan Carpenter <dan.carpenter@oracle.com>,
+ Allison Randal <allison@lohutok.net>
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Sender: "libertas-dev" <libertas-dev-bounces@lists.infradead.org>
 Errors-To: libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.org
 
-From: Colin Ian King <colin.king@canonical.com>
+The lbs_process_rxed_packet() frees the skb.  It didn't originally, but
+we fixed it in commit f54930f36311 ("libertas: don't leak skb on receive
+error").
 
-The variable ret is being initialized with a value that is never
-read and it is being updated later with a new value. The
-initialization is redundant and can be removed.
-
-Addresses-Coverity: ("Unused value")
-Signed-off-by: Colin Ian King <colin.king@canonical.com>
+Reported-by: Dan Carpenter <dan.carpenter@oracle.com>
+Signed-off-by: Dan Williams <dcbw@redhat.com>
 ---
- drivers/net/wireless/marvell/libertas/main.c | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ drivers/net/wireless/marvell/libertas/if_spi.c | 14 +++++---------
+ 1 file changed, 5 insertions(+), 9 deletions(-)
 
-diff --git a/drivers/net/wireless/marvell/libertas/main.c b/drivers/net/wireless/marvell/libertas/main.c
-index 5968852b65a7..2233b59cdf44 100644
---- a/drivers/net/wireless/marvell/libertas/main.c
-+++ b/drivers/net/wireless/marvell/libertas/main.c
-@@ -1046,7 +1046,7 @@ int lbs_rtap_supported(struct lbs_private *priv)
- int lbs_start_card(struct lbs_private *priv)
- {
- 	struct net_device *dev = priv->dev;
--	int ret = -1;
-+	int ret;
+diff --git a/drivers/net/wireless/marvell/libertas/if_spi.c b/drivers/net/wireless/marvell/libertas/if_spi.c
+index 27067e79e83fe..072da89c4986f 100644
+--- a/drivers/net/wireless/marvell/libertas/if_spi.c
++++ b/drivers/net/wireless/marvell/libertas/if_spi.c
+@@ -766,19 +766,15 @@ static int if_spi_c2h_data(struct if_spi_card *card)
  
- 	/* poke the firmware */
- 	ret = lbs_setup_firmware(priv);
+ 	/* Read the data from the WLAN module into our skb... */
+ 	err = spu_read(card, IF_SPI_DATA_RDWRPORT_REG, data, ALIGN(len, 4));
+-	if (err)
+-		goto free_skb;
++	if (err) {
++		dev_kfree_skb(skb);
++		goto out
++	}
+ 
+ 	/* pass the SKB to libertas */
+ 	err = lbs_process_rxed_packet(card->priv, skb);
+-	if (err)
+-		goto free_skb;
++	/* lbs_process_rxed_packet() consumes the skb */
+ 
+-	/* success */
+-	goto out;
+-
+-free_skb:
+-	dev_kfree_skb(skb);
+ out:
+ 	if (err)
+ 		netdev_err(priv->dev, "%s: err=%d\n", __func__, err);
 -- 
 2.20.1
 
