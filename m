@@ -2,90 +2,65 @@ Return-Path: <libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.or
 X-Original-To: lists+libertas-dev@lfdr.de
 Delivered-To: lists+libertas-dev@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8382372E22
-	for <lists+libertas-dev@lfdr.de>; Wed, 24 Jul 2019 13:49:22 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 2C1E2731D5
+	for <lists+libertas-dev@lfdr.de>; Wed, 24 Jul 2019 16:38:26 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:Date:Message-Id:To:References:
-	In-Reply-To:From:Subject:MIME-Version:Reply-To:Content-ID:Content-Description
-	:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
-	List-Owner; bh=bAAZiP7MJr/HlXTEVBmkGQtvKz2YvDXy9URICP8GsL4=; b=Hxd0bGete5sZIg
-	gWOMgQsG31TM9EUGk7Eb4PEylmx2nvej1lGfcnwHwn3ebEdZSsKIFJLE78g3Vsf1+PTst4qAiWhFA
-	jtyHYkcbvwVqK17/4lzVXo3J0nxAV/OoQ2HWYABqBvz+RWUBBNxpL0xMkbGKbLqJXysMN0ilKad5T
-	eihH0V2msZ0PC9qG0dUUi+CRiYoUeeeqExVGTF+b2s6OTexqJcCtvN/Z+gDhApeyPXM9yMW8E9Prs
-	1tfTzMq223mCZI4K+Ym61TXcJiaYvtYgPQZxOh0ZyZwGim0x6m7EMmYWyBYPeLJF84yWBGE39xXc2
-	RmFOWHaT4MIifzDqaaAg==;
+	List-Archive:List-Unsubscribe:List-Id:MIME-Version:References:In-Reply-To:
+	Date:To:From:Subject:Message-ID:Reply-To:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	List-Owner; bh=DtLBmb16pNrnsh72dGeUIAfqzgHHKriwXAetYEaNGpw=; b=qIdL5FDkvUKz3p
+	QlyMr76T3S2w482gPuuyhueBzIObQ/nsauKKzLjNRHBvQLnVuj4yu6hZkcOHRc14gfALjTOE4pZpl
+	9UUDd9JsNZJ8ozc/YJXxIqd+T/tVMTxlHch2Sw0IsyVJC5iyF8deiiAb+b5ypCSxS4KNZuacTlZe6
+	4BtYe4Epb7VJ/sxBhnQvr7jsx6mVxtqK25guoYqaYISxyoBHfNuYDA/7YYxLF9jltxM3iOoSZA/cI
+	qUb4m3FqWUn5xwW+G3q3owbZKjbe3qNO9LAGDJSIupC84rw/SMscITkVAdJNDoq3xGQ7R5Rjwawhq
+	/CKnnrLx8nlsEohVccCg==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92 #3 (Red Hat Linux))
-	id 1hqFlk-0000hH-5v; Wed, 24 Jul 2019 11:49:16 +0000
-Received: from smtp.codeaurora.org ([198.145.29.96])
+	id 1hqIPP-0006bq-OS; Wed, 24 Jul 2019 14:38:23 +0000
+Received: from mx1.redhat.com ([209.132.183.28])
  by bombadil.infradead.org with esmtps (Exim 4.92 #3 (Red Hat Linux))
- id 1hqFlg-0000gJ-MY
- for libertas-dev@lists.infradead.org; Wed, 24 Jul 2019 11:49:14 +0000
-Received: by smtp.codeaurora.org (Postfix, from userid 1000)
- id 1940B60A97; Wed, 24 Jul 2019 11:49:08 +0000 (UTC)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org;
- s=default; t=1563968951;
- bh=42X7y5jJNRiCroR9vcblJwiwKYId8aMdP1NkVM2G/cM=;
- h=Subject:From:In-Reply-To:References:To:Cc:Date:From;
- b=K+E4ljfhKOBwKjcpLWyV1MHG4fZH4ABjLw93pfPl/H7soTD1ba6LOnQyk1kOWWgKm
- lpbjAk2MKfek+qGSF0Tz4xMLusAkVY5Qp0WEGn1H1HRc/143ypjevI3Afsi5BsrisK
- BqRIwSfMxqnEAHSCQvnT5yxfk+nRQCYjqs2MZJPI=
-X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on
- pdx-caf-mail.web.codeaurora.org
-X-Spam-Level: 
-X-Spam-Status: No, score=-0.8 required=2.0 tests=ALL_TRUSTED,BAYES_00,
- DKIM_INVALID,DKIM_SIGNED,MISSING_DATE,MISSING_MID,SPF_NONE autolearn=no
- autolearn_force=no version=3.4.0
-Received: from potku.adurom.net (88-114-240-156.elisa-laajakaista.fi
- [88.114.240.156])
- (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+ id 1hqIPL-0006XJ-4V
+ for libertas-dev@lists.infradead.org; Wed, 24 Jul 2019 14:38:21 +0000
+Received: from smtp.corp.redhat.com (int-mx07.intmail.prod.int.phx2.redhat.com
+ [10.5.11.22])
+ (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))
  (No client certificate requested)
- (Authenticated sender: kvalo@smtp.codeaurora.org)
- by smtp.codeaurora.org (Postfix) with ESMTPSA id B27D26044E;
- Wed, 24 Jul 2019 11:49:03 +0000 (UTC)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org;
- s=default; t=1563968946;
- bh=42X7y5jJNRiCroR9vcblJwiwKYId8aMdP1NkVM2G/cM=;
- h=Subject:From:In-Reply-To:References:To:Cc:From;
- b=V4goodYFjZUkBLLOfZJnbzqps9+Gv5bQrb3NHB0izq8zXvcrYQ8MPqzowV6xYho/V
- cz2lb44YHCgoXnIbwMHfGlea8l2lHRNzEaFCE4d937M/1m/qRZI7FTgqrC4xwB9M6H
- PjIqNclMdJdc4hCuz6afAyPAxPGwGZugbcd1JTFM=
-DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org B27D26044E
-Authentication-Results: pdx-caf-mail.web.codeaurora.org;
- dmarc=none (p=none dis=none) header.from=codeaurora.org
-Authentication-Results: pdx-caf-mail.web.codeaurora.org;
- spf=none smtp.mailfrom=kvalo@codeaurora.org
+ by mx1.redhat.com (Postfix) with ESMTPS id 37E6A8E233;
+ Wed, 24 Jul 2019 14:38:18 +0000 (UTC)
+Received: from ovpn-112-51.rdu2.redhat.com (ovpn-112-51.rdu2.redhat.com
+ [10.10.112.51])
+ by smtp.corp.redhat.com (Postfix) with ESMTP id A0BE010190A9;
+ Wed, 24 Jul 2019 14:38:16 +0000 (UTC)
+Message-ID: <9153261627a0f84b996e023f1349a2bc06dd03ee.camel@redhat.com>
+Subject: [PATCH v3] libertas: Fix a double free in if_spi_c2h_data()
+From: Dan Williams <dcbw@redhat.com>
+To: Kalle Valo <kvalo@codeaurora.org>
+Date: Wed, 24 Jul 2019 09:38:15 -0500
+In-Reply-To: <ee4472e4728becc9713962ba264742cb1f337098.camel@redhat.com>
+References: <20190626100926.GD3242@mwanda>
+ <be491ab35ba46111a1c90cc12b6d5ff6ea3f57e8.camel@redhat.com>
+ <20190626132340.GE28859@kadam>
+ <e679c9f99d6952f82924c71f036e4a196d0e72d4.camel@redhat.com>
+ <ee4472e4728becc9713962ba264742cb1f337098.camel@redhat.com>
+User-Agent: Evolution 3.30.5 (3.30.5-1.fc29) 
 MIME-Version: 1.0
-Subject: Re: [PATCH] libertas: Add missing sentinel at end of if_usb.c fw_table
-From: Kalle Valo <kvalo@codeaurora.org>
-In-Reply-To: <20190710133138.GA31901@ip-172-31-14-16>
-References: <20190710133138.GA31901@ip-172-31-14-16>
-To: Kevin Easton <kevin@guarana.org>
-User-Agent: pwcli/0.0.0-git (https://github.com/kvalo/pwcli/) Python/2.7.12
-Message-Id: <20190724114911.1940B60A97@smtp.codeaurora.org>
-Date: Wed, 24 Jul 2019 11:49:08 +0000 (UTC)
+X-Scanned-By: MIMEDefang 2.84 on 10.5.11.22
+X-Greylist: Sender IP whitelisted, not delayed by milter-greylist-4.5.16
+ (mx1.redhat.com [10.5.110.26]); Wed, 24 Jul 2019 14:38:18 +0000 (UTC)
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20190724_044912_762207_3F9F2605 
-X-CRM114-Status: UNSURE (   7.27  )
-X-CRM114-Notice: Please train this message.
-X-Spam-Score: -2.5 (--)
+X-CRM114-CacheID: sfid-20190724_073819_203920_E1FCC13B 
+X-CRM114-Status: GOOD (  14.94  )
+X-Spam-Score: -5.0 (-----)
 X-Spam-Report: SpamAssassin version 3.4.2 on bombadil.infradead.org summary:
- Content analysis details:   (-2.5 points)
+ Content analysis details:   (-5.0 points)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -2.3 RCVD_IN_DNSWL_MED      RBL: Sender listed at https://www.dnswl.org/,
- medium trust [198.145.29.96 listed in list.dnswl.org]
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+ high trust [209.132.183.28 listed in list.dnswl.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
 X-BeenThere: libertas-dev@lists.infradead.org
 X-Mailman-Version: 2.1.29
 Precedence: list
@@ -97,31 +72,60 @@ List-Post: <mailto:libertas-dev@lists.infradead.org>
 List-Help: <mailto:libertas-dev-request@lists.infradead.org?subject=help>
 List-Subscribe: <http://lists.infradead.org/mailman/listinfo/libertas-dev>,
  <mailto:libertas-dev-request@lists.infradead.org?subject=subscribe>
-Cc: libertas-dev@lists.infradead.org, andreyknvl@google.com,
- linux-wireless@vger.kernel.org, linux-kernel@vger.kernel.org,
- syzkaller-bugs@googlegroups.com,
- syzbot <syzbot+98156c174c5a2cad9f8f@syzkaller.appspotmail.com>,
- netdev@vger.kernel.org, davem@davemloft.net
+Cc: Philip Rakity <prakity@yahoo.com>, libertas-dev@lists.infradead.org,
+ kernel-janitors@vger.kernel.org, linux-wireless@vger.kernel.org,
+ Lubomir Rintel <lkundrak@v3.sk>, Allison Randal <allison@lohutok.net>,
+ Dan Carpenter <dan.carpenter@oracle.com>
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Sender: "libertas-dev" <libertas-dev-bounces@lists.infradead.org>
 Errors-To: libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.org
 
-Kevin Easton <kevin@guarana.org> wrote:
+The lbs_process_rxed_packet() frees the skb.  It didn't originally, but
+we fixed it in commit f54930f36311 ("libertas: don't leak skb on receive
+error").
 
-> This sentinel tells the firmware loading process when to stop.
-> 
-> Reported-and-tested-by: syzbot+98156c174c5a2cad9f8f@syzkaller.appspotmail.com
-> Signed-off-by: Kevin Easton <kevin@guarana.org>
+Reported-by: Dan Carpenter <dan.carpenter@oracle.com>
+Signed-off-by: Dan Williams <dcbw@redhat.com>
+---
 
-Patch applied to wireless-drivers-next.git, thanks.
+Kalle: sorry about the build error; previous version of the patch before I fixed it.
+Here's the correct one.
 
-764f3f1ecffc libertas: Add missing sentinel at end of if_usb.c fw_table
+ drivers/net/wireless/marvell/libertas/if_spi.c | 14 +++++---------
+ 1 file changed, 5 insertions(+), 9 deletions(-)
 
+diff --git a/drivers/net/wireless/marvell/libertas/if_spi.c b/drivers/net/wireless/marvell/libertas/if_spi.c
+index 27067e79e83fe..d07fe82c557e8 100644
+--- a/drivers/net/wireless/marvell/libertas/if_spi.c
++++ b/drivers/net/wireless/marvell/libertas/if_spi.c
+@@ -766,19 +766,15 @@ static int if_spi_c2h_data(struct if_spi_card *card)
+ 
+ 	/* Read the data from the WLAN module into our skb... */
+ 	err = spu_read(card, IF_SPI_DATA_RDWRPORT_REG, data, ALIGN(len, 4));
+-	if (err)
+-		goto free_skb;
++	if (err) {
++		dev_kfree_skb(skb);
++		goto out;
++	}
+ 
+ 	/* pass the SKB to libertas */
+ 	err = lbs_process_rxed_packet(card->priv, skb);
+-	if (err)
+-		goto free_skb;
++	/* lbs_process_rxed_packet() consumes the skb */
+ 
+-	/* success */
+-	goto out;
+-
+-free_skb:
+-	dev_kfree_skb(skb);
+ out:
+ 	if (err)
+ 		netdev_err(priv->dev, "%s: err=%d\n", __func__, err);
 -- 
-https://patchwork.kernel.org/patch/11038493/
-
-https://wireless.wiki.kernel.org/en/developers/documentation/submittingpatches
+2.20.1
 
 
 _______________________________________________
