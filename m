@@ -2,56 +2,56 @@ Return-Path: <libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.or
 X-Original-To: lists+libertas-dev@lfdr.de
 Delivered-To: lists+libertas-dev@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id BB1F0BA415
-	for <lists+libertas-dev@lfdr.de>; Sun, 22 Sep 2019 20:54:09 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id DED98BA4BB
+	for <lists+libertas-dev@lfdr.de>; Sun, 22 Sep 2019 20:57:13 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
 	List-Archive:List-Unsubscribe:List-Id:MIME-Version:References:In-Reply-To:
 	Message-Id:Date:Subject:To:From:Reply-To:Content-ID:Content-Description:
 	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
-	List-Owner; bh=94+XjfnF/VIUg+tkupn/kkAXmT+GfaJOXyIRX8Kx6O0=; b=dHy5qpNAQZ9VVV
-	gvZAPzfIxgXpMr6RKcGM/iUB+hFuqokjSeAfAQ0Z0esUmqO0rpw+yJgs4sH2nWWYAMCyT8aT4NBIx
-	G7zISDYrKzt+iPnrTmlZ1k6ZCnNau1VznPLbzYuESo3o5JLVoiCZC6gp81962rdgx3TWDvFlmHlc+
-	M8eA23xgWOSEa+XBpOtqTSNAzbTGZQK86QxPTVCPiRPOXv/+Z8Zf3s82z5JrMkecIYgWTRm6ELjwS
-	TeYTw9dQVi8iBAhJum5/Q4sQ63vuiPkTqDIIAlZLn8oR7K7ElgL09j/Me3O0peL1QOMXioidzAYat
-	DxfLy/haGIWbMmNN/srg==;
+	List-Owner; bh=YFYZ6uWXfkp5XbszgMH07EJbwcozz3eFlRVBUknXl98=; b=EXXGm6MCCE7gu+
+	XHoMcAyw3RTq5X8cNLNKVoDFc9G/u9nuJLHpx9BDBkWzRCqXHYs8Mw3Cux0zo2MiCpe6ziyJVlcgv
+	lrzITQo6j9VY//UJUIBQNicmNHZRiTYOL8j3f3Ff4AZZ1kC09+ucWhJHK+cJ9cUjZRw1lPMzhsdtm
+	5+92ZdlSAt3yjh6xVPrXgDfE0FzwFdUtSr30aU3ijw7f8ZQZq11cHM6SNvXnqM+MtY22ScM8oaCtR
+	/ZRvSi8RYy8PwL/A0wduMweWalMkHR2kakRt+UpCgIN3PxX4jBJwWRXLvDHlTwqwzNMruxFTihyPF
+	vupKzbKh9boFljpe+lmA==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.2 #3 (Red Hat Linux))
-	id 1iC6zg-0003EI-VO; Sun, 22 Sep 2019 18:54:01 +0000
+	id 1iC72h-0006Nr-H1; Sun, 22 Sep 2019 18:57:07 +0000
 Received: from mail.kernel.org ([198.145.29.99])
  by bombadil.infradead.org with esmtps (Exim 4.92.2 #3 (Red Hat Linux))
- id 1iC6zd-0003DC-DB
- for libertas-dev@lists.infradead.org; Sun, 22 Sep 2019 18:53:58 +0000
+ id 1iC72e-0006NG-6E
+ for libertas-dev@lists.infradead.org; Sun, 22 Sep 2019 18:57:05 +0000
 Received: from sasha-vm.mshome.net (c-73-47-72-35.hsd1.nh.comcast.net
  [73.47.72.35])
  (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
  (No client certificate requested)
- by mail.kernel.org (Postfix) with ESMTPSA id 25ABC2190F;
- Sun, 22 Sep 2019 18:53:56 +0000 (UTC)
+ by mail.kernel.org (Postfix) with ESMTPSA id E0C4D21907;
+ Sun, 22 Sep 2019 18:57:02 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=kernel.org;
- s=default; t=1569178437;
- bh=FdSpS9PdX8CaNXfj0Fl/oV1rmce5v6VKCnvC7P0Fu/k=;
+ s=default; t=1569178623;
+ bh=dHg+UqiT6WV5wD4kJBwsxxJ5umjrfYXlD5jeO2Zj59U=;
  h=From:To:Cc:Subject:Date:In-Reply-To:References:From;
- b=mzyr8zN5tj+A42rGKy7/Jcqqkh6sCQkNdvL0UIRa/Eq5pJMRCUD65yRu+/p0eo0CQ
- ivZl0P8WlaXEND/+LlCHtrwnL9dJXmzH38PyFzHE3WlMa3myYHoQ64oookiHSD+SKJ
- U4o9dFYCjOQc03LK1v7INlEeuS3UHfAZSkaJu1tE=
+ b=bvwey5Zp0mfuxeoLZeep8Fb0qna+V8b4O9D4BBkS8eq7Ae6ZFCsxT113ixqHArjKJ
+ NO8A9GP+SR3uF7f8mw7VHu+jCbNVoHbk2sUYIwETIlgKwxQqdbT+hLPDXwBaShcxul
+ lAagRmJens44svars6TfY5SpiUIGbt+IWyv79ctM=
 From: Sasha Levin <sashal@kernel.org>
 To: linux-kernel@vger.kernel.org,
 	stable@vger.kernel.org
-Subject: [PATCH AUTOSEL 5.2 171/185] libertas: Add missing sentinel at end of
+Subject: [PATCH AUTOSEL 4.19 121/128] libertas: Add missing sentinel at end of
  if_usb.c fw_table
-Date: Sun, 22 Sep 2019 14:49:09 -0400
-Message-Id: <20190922184924.32534-171-sashal@kernel.org>
+Date: Sun, 22 Sep 2019 14:54:11 -0400
+Message-Id: <20190922185418.2158-121-sashal@kernel.org>
 X-Mailer: git-send-email 2.20.1
-In-Reply-To: <20190922184924.32534-1-sashal@kernel.org>
-References: <20190922184924.32534-1-sashal@kernel.org>
+In-Reply-To: <20190922185418.2158-1-sashal@kernel.org>
+References: <20190922185418.2158-1-sashal@kernel.org>
 MIME-Version: 1.0
 X-stable: review
 X-Patchwork-Hint: Ignore
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20190922_115357_462869_E00A574D 
-X-CRM114-Status: UNSURE (   9.81  )
+X-CRM114-CacheID: sfid-20190922_115704_245436_9B38E180 
+X-CRM114-Status: UNSURE (   9.91  )
 X-CRM114-Notice: Please train this message.
 X-Spam-Score: -5.2 (-----)
 X-Spam-Report: SpamAssassin version 3.4.2 on bombadil.infradead.org summary:
@@ -106,10 +106,10 @@ Signed-off-by: Sasha Levin <sashal@kernel.org>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/net/wireless/marvell/libertas/if_usb.c b/drivers/net/wireless/marvell/libertas/if_usb.c
-index f1622f0ff8c9e..fe3142d85d1e4 100644
+index 3dbfce972c56b..9e82ec12564bb 100644
 --- a/drivers/net/wireless/marvell/libertas/if_usb.c
 +++ b/drivers/net/wireless/marvell/libertas/if_usb.c
-@@ -50,7 +50,8 @@ static const struct lbs_fw_table fw_table[] = {
+@@ -49,7 +49,8 @@ static const struct lbs_fw_table fw_table[] = {
  	{ MODEL_8388, "libertas/usb8388_v5.bin", NULL },
  	{ MODEL_8388, "libertas/usb8388.bin", NULL },
  	{ MODEL_8388, "usb8388.bin", NULL },
