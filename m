@@ -2,57 +2,90 @@ Return-Path: <libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.or
 X-Original-To: lists+libertas-dev@lfdr.de
 Delivered-To: lists+libertas-dev@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0D2F1C119A
-	for <lists+libertas-dev@lfdr.de>; Sat, 28 Sep 2019 19:43:23 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id C42C5C3015
+	for <lists+libertas-dev@lfdr.de>; Tue,  1 Oct 2019 11:22:38 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
-	Content-Transfer-Encoding:Content-Type:List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:MIME-Version:Message-ID:From:Date:
-	Subject:To:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:Resent-From
-	:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:
-	List-Owner; bh=fSZcJLSrpaHf3KZwIBEJPis/9WFIzmR2v5DDF+pxuHc=; b=dike1YkSn6jqSx
-	xUSAM8F/J/2BpTzFToTCOb2hvkShWaX/fc8rVwhVH9jefHrlv8ALbhCRz/n4zd3FDj8vAfgyZKNSy
-	ip7qYPhy73uWY6Z+wMOL8IY+mH0r3lbpQNUnTdfWZ0N3Ruqn4T80TpjGTKIcsfg/a1lk3MZ5ij5ve
-	Q/JXBlrpqtVcu7341tjp1/gysiJcByhbr+dj/zB/IAr8qMpcP4eN7vjB/QTHCt7CaUDF+rL4vBfMW
-	OJ+ip9ySo728y8vjIn1S5acmp3wq5I6oxT1TCq7Zl3cAL3Y+Y2Tg8+SQ/iGedZDiMScCi+G7pS8Td
-	hhzJeT3Iw2YKOwsoyEHw==;
+	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
+	List-Archive:List-Unsubscribe:List-Id:Date:Message-Id:To:References:
+	In-Reply-To:From:Subject:MIME-Version:Reply-To:Content-ID:Content-Description
+	:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	List-Owner; bh=G5dk5EHjsY2z7m9SKof+STWvtUtA54gnYwYxbyIeZHE=; b=SZxSXbbaCELUFK
+	O5Rbsoiso9N77KslJTBj4LK/d/SrurIIhjizkgTG621kNvwhae6MxyfqripbORCak/uE1OO7uofzV
+	8wlCHXx17zcBbsRBJ4J6RzxUBRuimVCYR7YGGBslS/xxQ356zd9FwT8dhjIafuLW64OkbH3ezdsyV
+	8BvG0VHMwllXUGvqgTKpNEVH/QVONWaNYAVAiZINlguJArvwhmw8EuyQU0MeJo3j1uZr8HKTzE58m
+	MYyGzNI9Ra/yjuyoHstEUKpXpmLLXnNfqKGgW62BmusxwmlNJAqRzBZGCKQHIugEenUrz6bB6PEHB
+	vbs0JzMTm5DzxTKkE/7w==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.2 #3 (Red Hat Linux))
-	id 1iEGkM-0006vp-W0; Sat, 28 Sep 2019 17:43:06 +0000
-Received: from srv7.topplatform.nl ([85.17.147.84])
+	id 1iFEMR-0005YJ-LB; Tue, 01 Oct 2019 09:22:23 +0000
+Received: from smtp.codeaurora.org ([198.145.29.96])
  by bombadil.infradead.org with esmtps (Exim 4.92.2 #3 (Red Hat Linux))
- id 1iEGkJ-0006v8-4g
- for libertas-dev@lists.infradead.org; Sat, 28 Sep 2019 17:43:04 +0000
-Received: from user02 by srv7.topplatform.nl with local (Exim 4.92.2)
- (envelope-from <user02@leer-onderhoud.nl>) id 1iEGk5-008u2y-Bd
- for libertas-dev@lists.infradead.org; Sat, 28 Sep 2019 19:42:54 +0200
-To: libertas-dev@lists.infradead.org
-Subject: Bedankt voor uw bericht!
-X-PHP-Script: www.leer-onderhoud.nl/index.php for 185.17.149.170
-X-PHP-Filename: /home/user02/domains/leer-onderhoud.nl/private_html/index.php
- REMOTE_ADDR: 185.17.149.170
-Date: Sat, 28 Sep 2019 17:42:48 +0000
-From: "Leer-Onderhoud.nl" <info@leer-onderhoud.nl>
-Message-ID: <6453cef527fcbea2b6006ecb52cf3477@www.leer-onderhoud.nl>
-X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+ id 1iFEMN-0005WQ-Jp
+ for libertas-dev@lists.infradead.org; Tue, 01 Oct 2019 09:22:21 +0000
+Received: by smtp.codeaurora.org (Postfix, from userid 1000)
+ id A94FF61359; Tue,  1 Oct 2019 09:22:13 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org;
+ s=default; t=1569921738;
+ bh=VmuhhQTQwUQ/rwmArhiYtJQWVBWeBWRRgiKWa06tF+I=;
+ h=Subject:From:In-Reply-To:References:To:Cc:Date:From;
+ b=EzcxTANYAvoNSZ4lsQVyZ0YHlsyejnNwjnyBgpDg/eM32TMLSlQMTMASlom2wgkR5
+ rp31/IV/LCkbjr3FaqB3NwqO4y6PZYrkOARrLbE3oHmXSgq0tVmWsfaPwiHMkRp3f9
+ xTCC8hL4j3L177TwQXS4Yl1gc+d7mU875vVZ9j8o=
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on
+ pdx-caf-mail.web.codeaurora.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.8 required=2.0 tests=ALL_TRUSTED,BAYES_00,
+ DKIM_INVALID,DKIM_SIGNED,MISSING_DATE,MISSING_MID,SPF_NONE autolearn=no
+ autolearn_force=no version=3.4.0
+Received: from potku.adurom.net (88-114-240-156.elisa-laajakaista.fi
+ [88.114.240.156])
+ (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+ (No client certificate requested)
+ (Authenticated sender: kvalo@smtp.codeaurora.org)
+ by smtp.codeaurora.org (Postfix) with ESMTPSA id 038A461950;
+ Tue,  1 Oct 2019 09:22:11 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org;
+ s=default; t=1569921733;
+ bh=VmuhhQTQwUQ/rwmArhiYtJQWVBWeBWRRgiKWa06tF+I=;
+ h=Subject:From:In-Reply-To:References:To:Cc:From;
+ b=himDNRC4nbOwpPSsBw8yOo5x5YwEtnoMsQLkKhbXdsvA4Qj50ca8CeBIrTm1QE+Hn
+ AN2X2GsXiVN+EvY2j1cg1Sr6Oc0OW1Nj7vdo036Eq4ejBMlQwbXVIeWm4dOpWXoChG
+ hWuLN/p8B5bTXwbDfWWAw9sXn7/VIXRtMsRyQtQg=
+DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org 038A461950
+Authentication-Results: pdx-caf-mail.web.codeaurora.org;
+ dmarc=none (p=none dis=none) header.from=codeaurora.org
+Authentication-Results: pdx-caf-mail.web.codeaurora.org;
+ spf=none smtp.mailfrom=kvalo@codeaurora.org
 MIME-Version: 1.0
-X-Authenticated-Id: user02
+Subject: Re: [PATCH] libertas: fix a potential NULL pointer dereference
+From: Kalle Valo <kvalo@codeaurora.org>
+In-Reply-To: <1568824500-4243-1-git-send-email-allen.pais@oracle.com>
+References: <1568824500-4243-1-git-send-email-allen.pais@oracle.com>
+To: Allen Pais <allen.pais@oracle.com>
+User-Agent: pwcli/0.0.0-git (https://github.com/kvalo/pwcli/) Python/2.7.12
+Message-Id: <20191001092218.A94FF61359@smtp.codeaurora.org>
+Date: Tue,  1 Oct 2019 09:22:13 +0000 (UTC)
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20190928_104303_329903_F434D143 
-X-CRM114-Status: UNSURE (   0.37  )
+X-CRM114-CacheID: sfid-20191001_022219_683906_CE30D9D7 
+X-CRM114-Status: UNSURE (   5.97  )
 X-CRM114-Notice: Please train this message.
-X-Spam-Score: 4.2 (++++)
+X-Spam-Score: -2.5 (--)
 X-Spam-Report: SpamAssassin version 3.4.2 on bombadil.infradead.org summary:
- Content analysis details:   (4.2 points)
+ Content analysis details:   (-2.5 points)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
- no trust [85.17.147.84 listed in list.dnswl.org]
+ -2.3 RCVD_IN_DNSWL_MED      RBL: Sender listed at https://www.dnswl.org/,
+ medium trust [198.145.29.96 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- 2.4 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100]
- 1.7 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
 X-BeenThere: libertas-dev@lists.infradead.org
 X-Mailman-Version: 2.1.29
 Precedence: list
@@ -64,18 +97,28 @@ List-Post: <mailto:libertas-dev@lists.infradead.org>
 List-Help: <mailto:libertas-dev-request@lists.infradead.org?subject=help>
 List-Subscribe: <http://lists.infradead.org/mailman/listinfo/libertas-dev>,
  <mailto:libertas-dev-request@lists.infradead.org?subject=subscribe>
+Cc: netdev@vger.kernel.org, linux-wireless@vger.kernel.org, davem@davemloft.net,
+ linux-kernel@vger.kernel.org, libertas-dev@lists.infradead.org
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Sender: "libertas-dev" <libertas-dev-bounces@lists.infradead.org>
 Errors-To: libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.org
 
-Geachte Top 10 Best Hookup Sites for Casual Sex in 2019: https://1borsa.com/bestsexygirls591028?u=plyu,
+Allen Pais <allen.pais@oracle.com> wrote:
 
-Hartelijk dank voor de informatieaanvraag via Leer-Onderhoud.nl
-Wij zullen zo snel mogelijk contact met u opnemen.
+> alloc_workqueue is not checked for errors and as a result,
+> a potential NULL dereference could occur.
+> 
+> Signed-off-by: Allen Pais <allen.pais@oracle.com>
 
-Met vriendelijke groet,
-Leer-Onderhoud.nl
+Patch applied to wireless-drivers-next.git, thanks.
+
+7da413a18583 libertas: fix a potential NULL pointer dereference
+
+-- 
+https://patchwork.kernel.org/patch/11150757/
+
+https://wireless.wiki.kernel.org/en/developers/documentation/submittingpatches
 
 
 _______________________________________________
