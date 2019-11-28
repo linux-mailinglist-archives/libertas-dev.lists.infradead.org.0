@@ -2,85 +2,89 @@ Return-Path: <libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.or
 X-Original-To: lists+libertas-dev@lfdr.de
 Delivered-To: lists+libertas-dev@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id C8DAC10C4A9
-	for <lists+libertas-dev@lfdr.de>; Thu, 28 Nov 2019 09:01:02 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id E58B810C83B
+	for <lists+libertas-dev@lfdr.de>; Thu, 28 Nov 2019 12:54:30 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:Date:Message-ID:To:References:
-	In-Reply-To:From:Subject:MIME-Version:Reply-To:Content-ID:Content-Description
-	:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
-	List-Owner; bh=0F6AS9TpMfRxE4U7bGdrL72FlodxdfJtGFLU3Ry8jJs=; b=UutrTE8PtksLky
-	F5n3OM6T34db7bZxN6vbKuVTStxoJjxIQb9RCCiul4DZUR7z2RjAhKwTE8Ccve6v+aQqQRiRoUGsG
-	EjyLxwCIidw5r07u6FJ0w6LCo2vQNuNaFU2L97/0FtnrmafLpcb3Y1rmALEvO7yS/0Lc1+mj71F55
-	foM89ZndYwKn0kfl8687Vm/3pfqJw+g0xTwCX/bbS/fry2zuIvKYJUQ5Q+rB2yrxVp7cRVh2oZgJQ
-	gWCFifX9aVj075uvyExalZvm/5HxOOskYwQs8vJGpbGYtzk6Gm6G5aRtWonUd2qJzq8B7QtvsLlqH
-	uj04q7QCIwYTHlaB/Iug==;
+	List-Archive:List-Unsubscribe:List-Id:MIME-Version:Message-ID:In-Reply-To:
+	Date:References:Subject:To:From:Reply-To:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	List-Owner; bh=hEoe4n3oE936igG1EPvw5CuIBzLk+xfGdTZLXvGCNGY=; b=L/OrGnAmyM7wJw
+	iKkyY7P8b7QL2dpbJeuY78Wo5iBubUbIbIoLHCgXR/D6aLbLcL3mlx9mtCen8eBzE97w4vwDIqfmM
+	fTwnyf7QSxq0SmrMeOxU97Rn6j/sDGtlm5S4OlGB9tYBzMxyuQnd5M/BInxoJBeIBCKXM/M+O5fh1
+	xTR80fy508vAcIHuo+ISWV8LOOCNW4Dsj9f3qY3PStv2yNmsHG2IqZlMwh038KVH4GYWHQ1SyN+5j
+	Mu9iTTV9RGzT6Ap5jEEMLYe98mNzdakz/BinCmY0as+SMXoMbWn0CjpgVVvfBn5P96okOjqSl2tad
+	9LCHRIcs/Y33C0Fejc2Q==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.3 #3 (Red Hat Linux))
-	id 1iaEjL-0002j1-6S; Thu, 28 Nov 2019 08:00:51 +0000
-Received: from a27-186.smtp-out.us-west-2.amazonses.com ([54.240.27.186])
+	id 1iaING-000895-Ql; Thu, 28 Nov 2019 11:54:18 +0000
+Received: from a27-188.smtp-out.us-west-2.amazonses.com ([54.240.27.188])
  by bombadil.infradead.org with esmtps (Exim 4.92.3 #3 (Red Hat Linux))
- id 1iaEjI-0002id-DC
- for libertas-dev@lists.infradead.org; Thu, 28 Nov 2019 08:00:49 +0000
+ id 1iaIND-00088c-Su
+ for libertas-dev@lists.infradead.org; Thu, 28 Nov 2019 11:54:17 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=zsmsymrwgfyinv5wlfyidntwsjeeldzt; d=codeaurora.org; t=1574928046;
- h=Content-Type:MIME-Version:Content-Transfer-Encoding:Subject:From:In-Reply-To:References:To:Cc:Message-Id:Date;
- bh=R170+eucBgwGB7vYzNNsgn9IJoatW8gOmldds1sVyjg=;
- b=GGvyPRC10bH0DDqBdKc7tWrewr7z6j+c9mcTRwATZrnVEyFJNArRFdEHJME7oEfO
- ifxGoouuC70G/6r8asb6boWa++DJ1UbmXotcGku07H+nuEwDoTmy3p2a22RpFRbFvva
- vRcb4sQ1jP3/W1j2Hxb1gkIPV5O/tVHyJ/wX0DQ8=
+ s=zsmsymrwgfyinv5wlfyidntwsjeeldzt; d=codeaurora.org; t=1574942053;
+ h=From:To:Cc:Subject:References:Date:In-Reply-To:Message-ID:MIME-Version:Content-Type;
+ bh=6GEjRHiymZz2qpzisceFU6do1VPZDdWVVzA6Rg/sl3c=;
+ b=IIaW33lk6S6YFKw5CfWK1ctFgbekAlbn29ZIGiAiO4BR5fK+HT3vrzvQAoYSh1zW
+ 4SK31WUfarNAVfi7ViWS+S6VF+OVBr9Y1/xR97aIyvS6ifh9pFmsLMoIuIK0f5OqyaB
+ yEnuLa8KndQt7FK3ODp6YVwM6NVP+vsKrMlw3zu8=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1574928046;
- h=Content-Type:MIME-Version:Content-Transfer-Encoding:Subject:From:In-Reply-To:References:To:Cc:Message-Id:Date:Feedback-ID;
- bh=R170+eucBgwGB7vYzNNsgn9IJoatW8gOmldds1sVyjg=;
- b=V1o0grLKOa4zHwb/RM8MfFixdCXTViwQKU1QemZC0yR84MrgUQWjgb+/pQqa3UNu
- kP7sOnVJCisPgbDxWjltIvxf0eWeEUKSrWsBwbXhBv+TeR0Q62FBRW1Ez9VyRPIZLBY
- KhzBE0bnT6TBJ3hE1+ByIH9LgZJ4kV2O9fqzcfD4=
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1574942053;
+ h=From:To:Cc:Subject:References:Date:In-Reply-To:Message-ID:MIME-Version:Content-Type:Feedback-ID;
+ bh=6GEjRHiymZz2qpzisceFU6do1VPZDdWVVzA6Rg/sl3c=;
+ b=SGbfYeY2c78gW2pM6y4TTzcKOd0I7c6+57f0dQ6M17rDCPC/vBMgeIpYLr4nB8V4
+ m8kMZsxqDhGlEIilO1O7QvKev8IcSb10LXo01FzuRCOGfzFi5u7UDbtUtWpcdZU3K8Z
+ kV9bkJpb+aHE3Hg+lq+Q8OXV3INqLoAzFQwYRDLE=
 X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on
  aws-us-west-2-caf-mail-1.web.codeaurora.org
 X-Spam-Level: 
-X-Spam-Status: No, score=0.5 required=2.0 tests=ALL_TRUSTED,MISSING_DATE,
- MISSING_MID,SPF_NONE autolearn=no autolearn_force=no version=3.4.0
-DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org 9C5FEC43383
+X-Spam-Status: No, score=-1.0 required=2.0 tests=ALL_TRUSTED,SPF_NONE
+ autolearn=unavailable autolearn_force=no version=3.4.0
+DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org 5CD2CC447A0
 Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org;
  dmarc=none (p=none dis=none) header.from=codeaurora.org
 Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org;
  spf=none smtp.mailfrom=kvalo@codeaurora.org
-MIME-Version: 1.0
+From: Kalle Valo <kvalo@codeaurora.org>
+To: Wen Huang <huangwenabc@gmail.com>
 Subject: Re: [PATCH] libertas: Fix two buffer overflows at parsing bss
  descriptor
-From: Kalle Valo <kvalo@codeaurora.org>
-In-Reply-To: <20191122052917.11309-1-huangwenabc@gmail.com>
 References: <20191122052917.11309-1-huangwenabc@gmail.com>
-To: huangwenabc@gmail.com
-User-Agent: pwcli/0.0.0-git (https://github.com/kvalo/pwcli/) Python/2.7.12
-Message-ID: <0101016eb106d6ed-4c3f0d6a-2fe6-4276-81ae-e240130b8c57-000000@us-west-2.amazonses.com>
-Date: Thu, 28 Nov 2019 08:00:45 +0000
-X-SES-Outgoing: 2019.11.28-54.240.27.186
+ <0101016eb106d678-62ccf480-a650-47f2-87b3-cb5a03deb013-000000@us-west-2.amazonses.com>
+ <CADt2dQfbnk5WgDk=oeWjE1tziCEem-3fhhA68Pmr_fo0pZ_V=g@mail.gmail.com>
+Date: Thu, 28 Nov 2019 11:54:13 +0000
+In-Reply-To: <CADt2dQfbnk5WgDk=oeWjE1tziCEem-3fhhA68Pmr_fo0pZ_V=g@mail.gmail.com>
+ (Wen Huang's message of "Thu, 28 Nov 2019 19:03:27 +0800")
+Message-ID: <0101016eb1dc92b2-39a6b1c0-cd4b-4050-96f6-e140b0211640-000000@us-west-2.amazonses.com>
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/24.5 (gnu/linux)
+MIME-Version: 1.0
+X-SES-Outgoing: 2019.11.28-54.240.27.188
 Feedback-ID: 1.us-west-2.CZuq2qbDmUIuT3qdvXlRHZZCpfZqZ4GtG9v3VKgRyF0=:AmazonSES
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20191128_000048_631776_F59C201D 
-X-CRM114-Status: UNSURE (   5.17  )
+X-CRM114-CacheID: sfid-20191128_035416_031323_FED334B1 
+X-CRM114-Status: UNSURE (   6.85  )
 X-CRM114-Notice: Please train this message.
-X-Spam-Score: 0.1 (/)
+X-Spam-Score: 1.5 (+)
 X-Spam-Report: SpamAssassin version 3.4.2 on bombadil.infradead.org summary:
- Content analysis details:   (0.1 points)
+ Content analysis details:   (1.5 points)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
- no trust [54.240.27.186 listed in list.dnswl.org]
- -0.0 SPF_PASS               SPF: sender matches SPF record
+ no trust [54.240.27.188 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
  mail domains are different
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
  valid
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
  author's domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 1.5 FROM_FMBLA_NEWDOM      From domain was registered in last 7 days
 X-BeenThere: libertas-dev@lists.infradead.org
 X-Mailman-Version: 2.1.29
 Precedence: list
@@ -92,38 +96,31 @@ List-Post: <mailto:libertas-dev@lists.infradead.org>
 List-Help: <mailto:libertas-dev-request@lists.infradead.org?subject=help>
 List-Subscribe: <http://lists.infradead.org/mailman/listinfo/libertas-dev>,
  <mailto:libertas-dev-request@lists.infradead.org?subject=subscribe>
-Cc: linux-distros@vs.openwall.org, security@kernel.org,
- linux-wireless@vger.kernel.org, libertas-dev@lists.infradead.org
+Cc: linux-wireless@vger.kernel.org, libertas-dev@lists.infradead.org
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Sender: "libertas-dev" <libertas-dev-bounces@lists.infradead.org>
 Errors-To: libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.org
 
-huangwenabc@gmail.com wrote:
+Wen Huang <huangwenabc@gmail.com> writes:
 
-> From: Wen Huang <huangwenabc@gmail.com>
-> 
-> add_ie_rates() copys rates without checking the length 
-> in bss descriptor from remote AP.when victim connects to 
-> remote attacker, this may trigger buffer overflow.
-> lbs_ibss_join_existing() copys rates without checking the length 
-> in bss descriptor from remote IBSS node.when victim connects to 
-> remote attacker, this may trigger buffer overflow.
-> Fix them by putting the length check before performing copy.
-> 
-> This fix addresses CVE-2019-14896 and CVE-2019-14897.
-> 
-> Signed-off-by: Wen Huang <huangwenabc@gmail.com>
+> I have modified the patch and submmit:
+> https://patchwork.kernel.org/patch/11265751/ 
 
-Please fix the warning reported by kbuild bot.
+Thanks, but few tips for the future (no need to resend because of
+these):
 
-Patch set to Changes Requested.
+* don't use HTML in email
+
+* use v2, v3 and so on to identify the version of the patch
+
+* do not top post
+
+More info in the link below, I suggest to carefully study that. Better
+chances of getting your patches accepted that way.
 
 -- 
-https://patchwork.kernel.org/patch/11257187/
-
 https://wireless.wiki.kernel.org/en/developers/documentation/submittingpatches
-
 
 _______________________________________________
 libertas-dev mailing list
