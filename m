@@ -2,55 +2,55 @@ Return-Path: <libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.or
 X-Original-To: lists+libertas-dev@lfdr.de
 Delivered-To: lists+libertas-dev@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9C06D119A90
-	for <lists+libertas-dev@lfdr.de>; Tue, 10 Dec 2019 23:03:23 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 5A65B119C61
+	for <lists+libertas-dev@lfdr.de>; Tue, 10 Dec 2019 23:31:03 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
 	List-Archive:List-Unsubscribe:List-Id:MIME-Version:References:In-Reply-To:
 	Message-Id:Date:Subject:To:From:Reply-To:Content-ID:Content-Description:
 	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
-	List-Owner; bh=T5z8dnhulO7kHdOurJYxw80fw5yfofLTKj9xfWjhcuM=; b=XcUb0oAtoGcC2M
-	gAo7//GZsNPOI5vqxilmLJJnU+PjFpPkxC2AIrk3qPQwEnaA8zecvrSlYfVdjH2efiRnl7BrTA89J
-	1o31PTLoVFs9kAbCht3vNfXx6ItILa2UEqFczA0CBFv5NkwOD+4k0J2xjoebf70pdqu1sL5pBsKe4
-	T2ecw9AhWKeYpKvPv25kfNNMsDFFadaQTMzfdrkxINQs48p1xu60AVr7vjU+QGuy6lirybpgJpsVY
-	qdkBz+3QjEIZxNIPXQAUF1yQpyuHwB/23VybOn5XOESSxID7SpTzHj4wMiQbJ1sHx/gNbdIAYF9k/
-	3ku/1gcE9vK6/olug9RA==;
+	List-Owner; bh=k6RxmhrMuv/9Rz2d5nxml7iz1xEd7jk88pQmatrClPM=; b=WC3nTQtZeSOzke
+	gX+q663lzRtg54e0Ucpq6jIKdW1x0BVs2ss5/qgIQshMZlbaYR8rxQ5foCgA3JVNLpTzSrXEuKXCm
+	MAcMoBQR8j30b/TiXMTcuSxFdR9QvXWdH83irsgywQDtICDXY6gTP4bqlGvDIHo0JnXO01eoIQPvc
+	dumosgs+daix3jl+IrYPPjFkMKXqUD8hXuYAceF9zSFWoCQ3477M5miOEzHxYQ/S+QvQwOc1CkEal
+	rFof+IQkENSqKtV3ho2LER2SehxeZ6cPCDiGw1q6bcvIC/xmWVLJqnR8/WSEtpx9Qw2f86RbqXoBe
+	La3fwVdWK4inTId/H7NQ==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.3 #3 (Red Hat Linux))
-	id 1ienbA-0008TP-Sc; Tue, 10 Dec 2019 22:03:16 +0000
+	id 1ieo1s-0003gL-Q8; Tue, 10 Dec 2019 22:30:52 +0000
 Received: from mail.kernel.org ([198.145.29.99])
  by bombadil.infradead.org with esmtps (Exim 4.92.3 #3 (Red Hat Linux))
- id 1ienb8-0008Sh-P1
- for libertas-dev@lists.infradead.org; Tue, 10 Dec 2019 22:03:16 +0000
+ id 1ieo1o-0003f6-SK
+ for libertas-dev@lists.infradead.org; Tue, 10 Dec 2019 22:30:50 +0000
 Received: from sasha-vm.mshome.net (c-73-47-72-35.hsd1.nh.comcast.net
  [73.47.72.35])
  (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
  (No client certificate requested)
- by mail.kernel.org (Postfix) with ESMTPSA id 91E3320637;
- Tue, 10 Dec 2019 22:03:13 +0000 (UTC)
+ by mail.kernel.org (Postfix) with ESMTPSA id 601BD208C3;
+ Tue, 10 Dec 2019 22:30:47 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=kernel.org;
- s=default; t=1576015394;
- bh=mUD4W3Tq67ujXQHClMBqvBDuxNP3dbUk+hPXASdErHY=;
+ s=default; t=1576017048;
+ bh=Tot2xLvEJNbuTrMWA9fOxewwcqxG3Aa/rywOJS1Vi6w=;
  h=From:To:Cc:Subject:Date:In-Reply-To:References:From;
- b=Lmxe9W3cgDZQaX2n3hnW69veS9hBQm1BdVwOLqE9hqNETu+7bWlmPWAPc30C2vMO8
- 2Go1L2t/TRmtQMHGm6fCMFcZZI/aFYvpfHSBVbgmRZsgA/hzuVcxJb+lYmjCuTU68I
- vxgrmfmbBsCDzccA6U74Z0TCbtJK6G3rYMS7RAK4=
+ b=OfmdakgJa6gqHY9RHKxYw1YZJsMvaQJ4UbPQIvKLic8DXyXbrKZUlpN7P87vt7pGm
+ v9ypPWxgemroBPjob9X+D/VV7UTaPE3UBEXZr1RA1hskcrlyoqh9DOrMzKGGLSUudi
+ RYUYSLHcIJooH6qpeVqzfK5ftz+E9Uv3n1SHMCSM=
 From: Sasha Levin <sashal@kernel.org>
 To: linux-kernel@vger.kernel.org,
 	stable@vger.kernel.org
-Subject: [PATCH AUTOSEL 4.14 010/130] libertas: fix a potential NULL pointer
+Subject: [PATCH AUTOSEL 4.9 10/91] libertas: fix a potential NULL pointer
  dereference
-Date: Tue, 10 Dec 2019 17:01:01 -0500
-Message-Id: <20191210220301.13262-10-sashal@kernel.org>
+Date: Tue, 10 Dec 2019 17:29:14 -0500
+Message-Id: <20191210223035.14270-10-sashal@kernel.org>
 X-Mailer: git-send-email 2.20.1
-In-Reply-To: <20191210220301.13262-1-sashal@kernel.org>
-References: <20191210220301.13262-1-sashal@kernel.org>
+In-Reply-To: <20191210223035.14270-1-sashal@kernel.org>
+References: <20191210223035.14270-1-sashal@kernel.org>
 MIME-Version: 1.0
 X-stable: review
 X-Patchwork-Hint: Ignore
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20191210_140314_828657_A1D3B16A 
+X-CRM114-CacheID: sfid-20191210_143048_945074_F50EC924 
 X-CRM114-Status: UNSURE (   8.15  )
 X-CRM114-Notice: Please train this message.
 X-Spam-Score: -5.2 (-----)
@@ -104,10 +104,10 @@ Signed-off-by: Sasha Levin <sashal@kernel.org>
  1 file changed, 5 insertions(+)
 
 diff --git a/drivers/net/wireless/marvell/libertas/if_sdio.c b/drivers/net/wireless/marvell/libertas/if_sdio.c
-index 39bf85d0ade0e..c7f8a29d2606b 100644
+index 06a57c7089920..44da911c9a1a8 100644
 --- a/drivers/net/wireless/marvell/libertas/if_sdio.c
 +++ b/drivers/net/wireless/marvell/libertas/if_sdio.c
-@@ -1183,6 +1183,10 @@ static int if_sdio_probe(struct sdio_func *func,
+@@ -1229,6 +1229,10 @@ static int if_sdio_probe(struct sdio_func *func,
  
  	spin_lock_init(&card->lock);
  	card->workqueue = alloc_workqueue("libertas_sdio", WQ_MEM_RECLAIM, 0);
@@ -118,7 +118,7 @@ index 39bf85d0ade0e..c7f8a29d2606b 100644
  	INIT_WORK(&card->packet_worker, if_sdio_host_to_card_worker);
  	init_waitqueue_head(&card->pwron_waitq);
  
-@@ -1234,6 +1238,7 @@ static int if_sdio_probe(struct sdio_func *func,
+@@ -1282,6 +1286,7 @@ static int if_sdio_probe(struct sdio_func *func,
  	lbs_remove_card(priv);
  free:
  	destroy_workqueue(card->workqueue);
