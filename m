@@ -2,56 +2,56 @@ Return-Path: <libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.or
 X-Original-To: lists+libertas-dev@lfdr.de
 Delivered-To: lists+libertas-dev@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 946BF15E21C
-	for <lists+libertas-dev@lfdr.de>; Fri, 14 Feb 2020 17:22:23 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id AD12415E518
+	for <lists+libertas-dev@lfdr.de>; Fri, 14 Feb 2020 17:39:58 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
 	List-Archive:List-Unsubscribe:List-Id:MIME-Version:References:In-Reply-To:
 	Message-Id:Date:Subject:To:From:Reply-To:Content-ID:Content-Description:
 	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
-	List-Owner; bh=e3zcMPFeXpUgYJ3MD5iL8B3WWwe4SCKZ0yRTjj497H0=; b=QaY87qfN9/g5Vn
-	3Y4qgQU8c9slhaTunuSGj8UkfW8u7HfZSh+PxKLpx7YWYDsJoInkpr+XJWFqcbkALybu7jB4FT4l1
-	wP0Rl6uuziL1fmBbo9/9vAyVlRqsQGsryWsnfn83TR1tvcqEWr2waHOtEzq+o2xyu8DZgbEWsc3aY
-	SNQaaPdEUEBbp2eJBaKUVPZ8VIQEaY7DgU5hVZ3KRu9km+SeBkbo4+78cTs08lWfGJGBUAJOPu0nm
-	3+KxUksxtXPWbZXpdknexyf3sFOAqvfQ+hixCOTeqiEL/GdGu66Lq5zBuZSFPzVRnQE/oLpuJRDmY
-	aDOB5vTSlTO78TqYQMzQ==;
+	List-Owner; bh=E5BEeCO3jHgexHCae2IQJe+h0BOKoWHCKcGjSPOT0sk=; b=drpl7q0+kRsvXB
+	+MYVH/cEmhBeTK+ygZgaFE4oF9PRrp9VEp3Hcs/NmwJX5brLZ8NBx5rBvqRegpHgKZCZP96xsx2fB
+	EiWpKRhS6G3dN1ZlEEp3r25HNcoE1CU017Fxd97FE2l5n+qCDgmOg0UuBcvyUdMu/4zCL4uHfa4/s
+	JTSrfeZ9bNFPVynxl+wInzYkvxDpBf1yQ3Obin+NXgGdIeSDa+wt5ErH5ZFfSX31/qOp0Qn4lkaLk
+	LYCuhC97mNWwcFcxn9ZItf7BZyYFgDoQ7/Grxfs7u3ddtBm42B+9zrLJYd7YdO3tQRKrvBA038MyE
+	GOPonw6C84j6lUq31SKA==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.3 #3 (Red Hat Linux))
-	id 1j2djF-0005vn-Dw; Fri, 14 Feb 2020 16:22:09 +0000
+	id 1j2e0J-0000PP-Gb; Fri, 14 Feb 2020 16:39:47 +0000
 Received: from mail.kernel.org ([198.145.29.99])
  by bombadil.infradead.org with esmtps (Exim 4.92.3 #3 (Red Hat Linux))
- id 1j2dRd-0002LT-54
- for libertas-dev@lists.infradead.org; Fri, 14 Feb 2020 16:03:58 +0000
+ id 1j2daD-0004tC-2r
+ for libertas-dev@lists.infradead.org; Fri, 14 Feb 2020 16:12:51 +0000
 Received: from sasha-vm.mshome.net (c-73-47-72-35.hsd1.nh.comcast.net
  [73.47.72.35])
  (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
  (No client certificate requested)
- by mail.kernel.org (Postfix) with ESMTPSA id AE7E824676;
- Fri, 14 Feb 2020 16:03:55 +0000 (UTC)
+ by mail.kernel.org (Postfix) with ESMTPSA id 4FB4B246B4;
+ Fri, 14 Feb 2020 16:12:47 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=kernel.org;
- s=default; t=1581696236;
- bh=laid7J5sQfr4zc5dfFYayIFp5SqBhYxHplp0Qg+Sfbc=;
+ s=default; t=1581696768;
+ bh=sOWt88WVkaqu6GMzTtpvWwwMB224frFvtLxOEicCWVI=;
  h=From:To:Cc:Subject:Date:In-Reply-To:References:From;
- b=ilNjv1dNbP07vhwQsHeG3myi+s8kIcU2CnUXp542gt6hQBzosyIDWV4K21465w5jB
- KSeTqabdKsvUpaIElvic/kmpHWBbL2YQfkj/LrB+WSzSp+mZsCt5N7Ghheq0c6wh6M
- WX6XJKTE65VUZ/G8X9JA35SCiKr2ifW0rLRVJ+z4=
+ b=aVSQLUjRoC6OrWmHeaZ5pZl5n2vmQwSkVk3xMgfhq592DQ0g0W3rpnaoSS6rK9u/o
+ fSm5/V1g7Ik3DX8bDYlw2d2vblfL7eEpkklnqEX6+w19qByLSR3mtkHzP26euHyFxd
+ +jtbgz/kAvmuidfGq4SAaYDWFUjvpYovFlImSLMk=
 From: Sasha Levin <sashal@kernel.org>
 To: linux-kernel@vger.kernel.org,
 	stable@vger.kernel.org
-Subject: [PATCH AUTOSEL 5.4 096/459] libertas: make lbs_ibss_join_existing()
- return error code on rates overflow
-Date: Fri, 14 Feb 2020 10:55:46 -0500
-Message-Id: <20200214160149.11681-96-sashal@kernel.org>
+Subject: [PATCH AUTOSEL 4.19 047/252] libertas: don't exit from
+ lbs_ibss_join_existing() with RCU read lock held
+Date: Fri, 14 Feb 2020 11:08:22 -0500
+Message-Id: <20200214161147.15842-47-sashal@kernel.org>
 X-Mailer: git-send-email 2.20.1
-In-Reply-To: <20200214160149.11681-1-sashal@kernel.org>
-References: <20200214160149.11681-1-sashal@kernel.org>
+In-Reply-To: <20200214161147.15842-1-sashal@kernel.org>
+References: <20200214161147.15842-1-sashal@kernel.org>
 MIME-Version: 1.0
 X-stable: review
 X-Patchwork-Hint: Ignore
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20200214_080357_244520_26997DD3 
-X-CRM114-Status: UNSURE (   9.83  )
+X-CRM114-CacheID: sfid-20200214_081249_378059_48CB58B0 
+X-CRM114-Status: UNSURE (   8.56  )
 X-CRM114-Notice: Please train this message.
 X-Spam-Score: -5.2 (-----)
 X-Spam-Report: SpamAssassin version 3.4.3 on bombadil.infradead.org summary:
@@ -91,18 +91,14 @@ Errors-To: libertas-dev-bounces+lists+libertas-dev=lfdr.de@lists.infradead.org
 
 From: Nicolai Stange <nstange@suse.de>
 
-[ Upstream commit 1754c4f60aaf1e17d886afefee97e94d7f27b4cb ]
+[ Upstream commit c7bf1fb7ddca331780b9a733ae308737b39f1ad4 ]
 
 Commit e5e884b42639 ("libertas: Fix two buffer overflows at parsing bss
 descriptor") introduced a bounds check on the number of supplied rates to
-lbs_ibss_join_existing() and made it to return on overflow.
+lbs_ibss_join_existing().
 
-However, the aforementioned commit doesn't set the return value accordingly
-and thus, lbs_ibss_join_existing() would return with zero even though it
-failed.
-
-Make lbs_ibss_join_existing return -EINVAL in case the bounds check on the
-number of supplied rates fails.
+Unfortunately, it introduced a return path from within a RCU read side
+critical section without a corresponding rcu_read_unlock(). Fix this.
 
 Fixes: e5e884b42639 ("libertas: Fix two buffer overflows at parsing bss descriptor")
 Signed-off-by: Nicolai Stange <nstange@suse.de>
@@ -113,14 +109,14 @@ Signed-off-by: Sasha Levin <sashal@kernel.org>
  1 file changed, 1 insertion(+)
 
 diff --git a/drivers/net/wireless/marvell/libertas/cfg.c b/drivers/net/wireless/marvell/libertas/cfg.c
-index 68985d7663491..4e3de684928bf 100644
+index c9401c121a14e..68985d7663491 100644
 --- a/drivers/net/wireless/marvell/libertas/cfg.c
 +++ b/drivers/net/wireless/marvell/libertas/cfg.c
-@@ -1786,6 +1786,7 @@ static int lbs_ibss_join_existing(struct lbs_private *priv,
+@@ -1785,6 +1785,7 @@ static int lbs_ibss_join_existing(struct lbs_private *priv,
+ 		rates_max = rates_eid[1];
  		if (rates_max > MAX_RATES) {
  			lbs_deb_join("invalid rates");
- 			rcu_read_unlock();
-+			ret = -EINVAL;
++			rcu_read_unlock();
  			goto out;
  		}
  		rates = cmd.bss.rates;
